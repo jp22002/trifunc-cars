@@ -21,7 +21,6 @@ def get_dictionary():
     while flag:
         car_brand = input()
         if car_brand == "":
-            return car_dictionary
             flag = False
         else:
             if car_brand in car_dictionary:
