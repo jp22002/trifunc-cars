@@ -1,11 +1,14 @@
 def get_input():
+    '''
+    Gets an Input
+    '''
     car_color = input('Enter a car manufacturer (or press Enter to finish): ').title()
     return car_color
 
 
 def get_dictionary():
     '''
-    This creates a dictionary and sorts it 
+    This creates a dictionary
     '''
 
     car_dictionary = {}
@@ -23,6 +26,9 @@ def get_dictionary():
 
 
 def use_dictionary(car_dictionary):
+    '''
+    Sorts and prints dictionary
+    '''
     car_dictionary = dict(sorted(car_dictionary.items()))
 
     for key ,value in car_dictionary.items():
