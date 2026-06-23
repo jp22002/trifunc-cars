@@ -18,7 +18,7 @@ def get_dictionary():
     #dictionary is made
     global car_dictionary
     flag = True
-    while flag == True:
+    while flag:
         car_color = get_input()
         if car_color == "":
             return car_dictionary
