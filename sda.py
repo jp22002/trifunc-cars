@@ -7,8 +7,8 @@ def get_input():
     '''
     Gets an Input
     '''
-    car_color = input('Enter a car manufacturer (or press Enter to finish): ').title()
-    return car_color
+    car_brand = input('Enter a car manufacturer (or press Enter to finish): ').title()
+    return car_brand
 
 
 def get_dictionary():
@@ -19,15 +19,15 @@ def get_dictionary():
     global car_dictionary
     flag = True
     while flag:
-        car_color = get_input()
-        if car_color == "":
+        car_brand = input()
+        if car_brand == "":
             return car_dictionary
             flag = False
         else:
-            if car_color in car_dictionary:
-                car_dictionary[car_color] += 1
+            if car_brand in car_dictionary:
+                car_dictionary[car_brand] += 1
             else:
-                car_dictionary[car_color] = 1
+                car_dictionary[car_brand] = 1
 
 
 def use_dictionary():
